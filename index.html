@@ -3,20 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adfactors PR Agency</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'brand-orange': '#ed8a19',
-            'brand-dark': '#2a3b4c'
-          }
-        }
-      }
-    }
-  </script>
+  <title>S Agency - Adfactors PR</title>
+  <link href="./style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
@@ -28,283 +16,96 @@
       background-size: cover;
       background-position: center;
     }
-    /* Smooth fade transition for the carousel */
-    .fade-transition {
-      transition: opacity 0.5s ease-in-out;
-    }
+    .fade-transition { transition: opacity 0.5s ease-in-out; }
   </style>
 </head>
 <body class="bg-[#f8f9fa] text-brand-dark">
 
   <header class="bg-white sticky top-0 z-50 shadow-sm border-b border-gray-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div class="flex justify-between items-center h-20">
-            <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
-              <img src="logo-s.png" alt="Logo" class="h-10 w-10 rounded-md">
-              <div class="flex flex-col">
-                <span class="font-bold text-xl text-brand-dark leading-tight tracking-tight">S Agency</span>
-              </div>
-            </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        <div class="flex-shrink-0 flex items-center gap-3 cursor-pointer">
+          <img src="logo-s.png" alt="Logo" class="h-10 w-10 rounded-md">
+          <span class="font-bold text-xl text-brand-dark">S Agency</span>
+        </div>
 
-              <nav class="hidden md:flex space-x-8 items-center h-full">
-                  
-                  <div class="group relative flex items-center h-full cursor-pointer hover:text-brand-orange text-brand-dark font-medium text-sm transition-colors">
-                      About Us
-                      <svg class="w-4 h-4 ml-1 text-gray-400 group-hover:text-brand-orange transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-                      
-                      <div class="absolute top-[70px] left-0 w-48 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-gray-50 transition-all duration-200 z-50">
-                          <a href="#" class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-brand-orange transition">Company Overview</a>
-                          <a href="#" class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-brand-orange transition">Leadership Team</a>
-                          <a href="#" class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-brand-orange transition">Vision & Values</a>
-                      </div>
-                  </div>
+        <nav class="hidden md:flex space-x-8 items-center h-full text-sm font-medium">
+          <a href="#" class="hover:text-brand-orange transition-colors">About Us</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Expertise</a>
+          <a href="#" class="hover:text-brand-orange transition-colors">Sectors</a>
+          <a href="contact.html" class="px-6 py-2.5 bg-brand-orange text-white rounded-full font-bold hover:scale-105 transform transition-all">Write to Us</a>
+        </nav>
 
-                  <a href="#" class="hover:text-brand-orange text-brand-dark font-medium text-sm transition-colors">Our Expertise</a>
-                  <a href="#" class="hover:text-brand-orange text-brand-dark font-medium text-sm transition-colors">Sectors</a>
-                  <a href="#" class="hover:text-brand-orange text-brand-dark font-medium text-sm transition-colors">Resources</a>
-                  <a href="#" class="hover:text-brand-orange text-brand-dark font-medium text-sm transition-colors">Careers</a>
-                  
-                  <div class="group relative flex items-center h-full cursor-pointer hover:text-brand-orange text-brand-dark font-medium text-sm transition-colors">
-                      Location
-                      <svg class="w-4 h-4 ml-1 text-gray-400 group-hover:text-brand-orange transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
-
-                      <div class="absolute top-[70px] left-0 w-48 bg-white shadow-xl rounded-xl py-2 hidden group-hover:block border border-gray-50 transition-all duration-200 z-50">
-                          <a href="#" class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-brand-orange transition">India</a>
-                          <a href="#" class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-brand-orange transition">Sri Lanka</a>
-                          <a href="#" class="block px-5 py-3 text-sm text-gray-700 hover:bg-orange-50 hover:text-brand-orange transition">Singapore</a>
-                      </div>
-                  </div>
-              </nav>
-
-              <div class="hidden md:block">
-                  <a href="contact.html" class="inline-flex items-center justify-center px-8 py-2.5 font-bold rounded-full text-white bg-gradient-to-r from-brand-orange to-[#de6b11] hover:shadow-lg hover:scale-105 transform transition-all">
-                      Write to Us
-                  </a>
-              </div>
-
-              <div class="md:hidden flex items-center">
-                  <button id="mobile-menu-btn" class="text-brand-dark hover:text-brand-orange focus:outline-none p-2">
-                      <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-                      </svg>
-                  </button>
-              </div>
-
-          </div>
+        <div class="md:hidden">
+          <button id="mobile-menu-btn" class="p-2 focus:outline-none">
+            <svg class="h-7 w-7 text-brand-dark" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+          </button>
+        </div>
       </div>
+    </div>
 
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
-          <div class="px-4 pt-2 pb-6 space-y-1">
-              <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-orange hover:bg-orange-50">About Us</a>
-              <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-orange hover:bg-orange-50">Our Expertise</a>
-              <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-orange hover:bg-orange-50">Sectors</a>
-              <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-orange hover:bg-orange-50">Location</a>
-              <a href="contact.html" class="block mt-4 px-3 py-3 text-center rounded-md text-base font-bold text-white bg-brand-orange">Write to Us</a>
-          </div>
-      </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-lg p-4 space-y-2">
+      <a href="#" class="block p-3 hover:bg-orange-50 rounded-md">About Us</a>
+      <a href="#" class="block p-3 hover:bg-orange-50 rounded-md">Expertise</a>
+      <a href="contact.html" class="block p-3 bg-brand-orange text-white text-center rounded-md font-bold">Write to Us</a>
+    </div>
   </header>
 
-  <section class="bg-gradient-to-r from-brand-orange to-[#de6b11] text-white py-20 px-8 flex items-center justify-center overflow-hidden min-h-[350px]">
-    <div id="carousel-container" class="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between fade-transition opacity-100">
-      <div class="md:w-3/4 pr-0 md:pr-12 text-center md:text-left">
-        <h1 id="carousel-quote" class="text-3xl md:text-5xl font-bold mb-6 leading-tight">“Reputation management is not just what we do, it’s who we are.”</h1>
-        <p id="carousel-subtext" class="text-lg md:text-xl font-medium">We help brands build, protect, and amplify their reputation in a complex world.</p>
+  <section class="bg-gradient-to-r from-brand-orange to-[#de6b11] text-white py-12 md:py-20 px-4">
+    <div id="carousel-container" class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between fade-transition">
+      <div class="w-full md:w-3/4 text-center md:text-left">
+        <h1 id="carousel-quote" class="text-3xl md:text-5xl font-bold mb-4 leading-tight">“Reputation management is who we are.”</h1>
+        <p id="carousel-subtext" class="text-lg md:text-xl opacity-90">Building trust in a complex world.</p>
       </div>
-      <img id="carousel-image" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256" alt="Testimonial Image" class="w-40 h-40 md:w-48 md:h-48 rounded-full shadow-2xl mt-10 md:mt-0 border-4 border-white object-cover flex-shrink-0">
+      <img id="carousel-image" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256" class="w-32 h-32 md:w-48 md:h-48 rounded-full border-4 border-white shadow-2xl mt-8 md:mt-0 object-cover">
     </div>
   </section>
 
-  <section class="py-16 bg-white text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-2">We understand <span class="text-brand-orange">business in India.</span></h2>
-  </section>
-
-  <section class="parallax relative h-[450px] flex items-center">
-    <div class="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 bg-white bg-opacity-95 shadow-xl rounded-2xl p-10 w-full max-w-md">
-      <h3 class="text-2xl font-bold mb-4">Our Story</h3>
-      <p class="mb-6 text-brand-dark leading-relaxed">Founded in 1997, Adfactors PR has grown to become India’s largest PR consultancy, serving over 300 retained clients across 40 sectors. Our journey is built on trust, expertise, and a relentless pursuit of excellence.</p>
-      <a href="#" class="text-brand-orange font-bold text-sm hover:underline uppercase tracking-wide">Read more</a>
-    </div>
-  </section>
-
-  <section class="py-20 px-8 bg-[#f8f9fa]">
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div class="bg-white rounded-2xl shadow-md p-10 border-b-4 border-brand-orange hover:shadow-lg transition-shadow">
-        <h4 class="text-2xl font-bold mb-6">Our Expertise</h4>
-        <ul class="space-y-3 text-brand-dark">
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Corporate Reputation</li>
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Crisis Management</li>
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Media Relations</li>
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Digital PR</li>
-        </ul>
+  <section class="py-16 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+      <div class="bg-brand-dark p-6 rounded-xl text-white text-center shadow-md">
+        <span class="block font-bold text-sm">Best PR Agency</span>
       </div>
-      <div class="bg-white rounded-2xl shadow-md p-10 border-b-4 border-brand-orange hover:shadow-lg transition-shadow">
-        <h4 class="text-2xl font-bold mb-6">Sector</h4>
-        <ul class="space-y-3 text-brand-dark">
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Finance & Banking</li>
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Healthcare</li>
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Technology</li>
-          <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Public Affairs</li>
-        </ul>
+      <div class="bg-brand-dark p-6 rounded-xl text-white text-center shadow-md">
+        <span class="block font-bold text-sm">SABRE Winner</span>
+      </div>
+      <div class="bg-brand-dark p-6 rounded-xl text-white text-center shadow-md">
+        <span class="block font-bold text-sm">PRWeek Asia</span>
+      </div>
+      <div class="bg-brand-dark p-6 rounded-xl text-white text-center shadow-md">
+        <span class="block font-bold text-sm">India PR Awards</span>
       </div>
     </div>
   </section>
 
-  <section class="py-20 px-8 bg-white">
-    <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-16 mb-16">
-        <div>
-          <h5 class="text-xs font-bold uppercase tracking-widest mb-4 text-brand-orange">Explore Latest</h5>
-          <h2 class="text-3xl font-bold mb-8 text-brand-dark">Insights</h2>
-          <div class="space-y-6">
-            <div class="bg-[#f8f9fa] rounded-2xl p-8 shadow-sm border border-gray-100 border-l-4 border-l-brand-orange hover:-translate-y-1 transition-transform">
-              <h6 class="font-bold text-lg mb-2">The Future of PR in India</h6>
-              <p class="text-gray-600">How digital transformation is reshaping the communications landscape.</p>
-            </div>
-            <div class="bg-[#f8f9fa] rounded-2xl p-8 shadow-sm border border-gray-100 border-l-4 border-l-brand-orange hover:-translate-y-1 transition-transform">
-              <h6 class="font-bold text-lg mb-2">Crisis Response Playbook</h6>
-              <p class="text-gray-600">Best practices for managing reputation in turbulent times.</p>
-            </div>
-          </div>
-        </div>
-        <div>
-          <h5 class="text-xs font-bold uppercase tracking-widest mb-4 text-brand-orange">Get Latest</h5>
-          <h2 class="text-3xl font-bold mb-8 text-brand-dark">News</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
-              <h6 class="font-bold mb-2">Adfactors wins SABRE Award</h6>
-              <p class="text-sm text-gray-600">Recognized for excellence in corporate reputation management.</p>
-            </div>
-            <div class="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
-              <h6 class="font-bold mb-2">New Delhi Office Opens</h6>
-              <p class="text-sm text-gray-600">Expanding our presence in North India.</p>
-            </div>
-            <div class="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm border border-gray-100 md:col-span-2 hover:-translate-y-1 transition-transform">
-              <h6 class="font-bold mb-2">PRWeek Asia 2025 Finalist</h6>
-              <p class="text-sm text-gray-600">Shortlisted for Agency of the Year.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=80&q=80" alt="Award 1" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">Best PR Agency 2025</span>
-        </div>
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=80&q=80" alt="Award 2" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">SABRE Gold Winner</span>
-        </div>
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=80&q=80" alt="Award 3" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">PRWeek Asia Finalist</span>
-        </div>
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=80&q=80" alt="Award 4" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">India PR Awards</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="bg-brand-dark text-white py-20 px-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-12">
-      <div>
-        <h6 class="font-bold mb-6 text-brand-orange">Company</h6>
-        <ul class="space-y-3 text-sm text-gray-300">
-          <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Leadership</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">History</a></li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-bold mb-6 text-brand-orange">Work</h6>
-        <ul class="space-y-3 text-sm text-gray-300">
-          <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Clients</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Awards</a></li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-bold mb-6 text-brand-orange">Opportunities</h6>
-        <ul class="space-y-3 text-sm text-gray-300">
-          <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">Internships</a></li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-bold mb-6 text-brand-orange">Support</h6>
-        <ul class="space-y-3 text-sm text-gray-300">
-          <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
-          <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
-        </ul>
-      </div>
-      <div>
-        <h6 class="font-bold mb-6 text-brand-orange">Connect</h6>
-        <div class="flex space-x-4">
-          <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition-colors"><svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/></svg></a>
-          <a href="#" aria-label="Twitter" class="text-gray-400 hover:text-white transition-colors"><svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M24 4.557a9.93 9.93 0 0 1-2.828.775 4.932 4.932 0 0 0 2.165-2.724c-.951.564-2.005.974-3.127 1.195a4.92 4.92 0 0 0-8.384 4.482c-4.086-.205-7.713-2.164-10.141-5.144a4.822 4.822 0 0 0-.666 2.475c0 1.708.87 3.216 2.188 4.099a4.904 4.904 0 0 1-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.936 4.936 0 0 1-2.224.084c.627 1.956 2.444 3.377 4.6 3.417a9.867 9.867 0 0 1-6.102 2.104c-.396 0-.787-.023-1.175-.069a13.945 13.945 0 0 0 7.548 2.212c9.057 0 14.009-7.513 14.009-14.009 0-.213-.005-.425-.014-.636a10.012 10.012 0 0 0 2.457-2.548z"/></svg></a>
-        </div>
-      </div>
-    </div>
-    <div class="border-t border-gray-700 mt-16 pt-8 text-center text-sm text-gray-500">
-      © 2026 Adfactors PR. All rights reserved.
-    </div>
+  <footer class="bg-brand-dark text-white py-10 text-center border-t border-gray-700">
+    <p class="text-sm opacity-50">© 2026 S Agency. All rights reserved.</p>
   </footer>
 
   <script>
-    // 1. Mobile Menu Toggle
-    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-    const mobileMenu = document.getElementById('mobile-menu');
+    // Mobile Menu Logic
+    const btn = document.getElementById('mobile-menu-btn');
+    const menu = document.getElementById('mobile-menu');
+    btn.onclick = () => menu.classList.toggle('hidden');
 
-    mobileMenuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-
-    // 2. Hero Testimonial Carousel Data
+    // Auto Carousel Logic
     const testimonials = [
-      {
-        quote: "“Reputation management is not just what we do, it’s who we are.”",
-        subtext: "We help brands build, protect, and amplify their reputation in a complex world.",
-        image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256"
-      },
-      {
-        quote: "“The collaborative approach enhances my learning in reputation management.”",
-        subtext: "Ajaya Sharma, Senior Vice President",
-        image: "https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=256&h=256"
-      },
-      {
-        quote: "“We unlock value for stakeholders through strategic, data-driven communications.”",
-        subtext: "Adfactors PR Leadership Team",
-        image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=facearea&w=256&h=256"
-      }
+      { q: "“Reputation management is who we are.”", s: "S Agency Leadership", i: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256" },
+      { q: "“Strategic communication at its best.”", s: "Adfactors Advisory", i: "https://images.unsplash.com/photo-1557862921-37829c790f19?auto=format&fit=crop&w=256&h=256" }
     ];
-
-    let currentIndex = 0;
-    const containerEl = document.getElementById('carousel-container');
-    const quoteEl = document.getElementById('carousel-quote');
-    const subtextEl = document.getElementById('carousel-subtext');
-    const imageEl = document.getElementById('carousel-image');
-
-    // Run carousel every 5 seconds (5000 milliseconds)
+    let idx = 0;
     setInterval(() => {
-      // Step A: Fade Out
-      containerEl.classList.remove('opacity-100');
-      containerEl.classList.add('opacity-0');
-
-      // Wait 500ms for the fade-out to finish, then swap content and fade back in
+      const c = document.getElementById('carousel-container');
+      c.classList.add('opacity-0');
       setTimeout(() => {
-        currentIndex = (currentIndex + 1) % testimonials.length;
-        
-        quoteEl.innerText = testimonials[currentIndex].quote;
-        subtextEl.innerText = testimonials[currentIndex].subtext;
-        imageEl.src = testimonials[currentIndex].image;
-
-        // Step B: Fade In
-        containerEl.classList.remove('opacity-0');
-        containerEl.classList.add('opacity-100');
-      }, 500); 
-
+        idx = (idx + 1) % testimonials.length;
+        document.getElementById('carousel-quote').innerText = testimonials[idx].q;
+        document.getElementById('carousel-subtext').innerText = testimonials[idx].s;
+        document.getElementById('carousel-image').src = testimonials[idx].i;
+        c.classList.remove('opacity-0');
+      }, 500);
     }, 5000);
   </script>
 </body>
