@@ -3,93 +3,77 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - Adfactors PR</title>
+  <title>Contact Us - S Agency</title>
   <link href="./style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <style> body { font-family: 'Inter', sans-serif; } </style>
 </head>
 <body class="bg-[#f8f9fa] text-brand-dark min-h-screen flex flex-col">
 
-  <header class="flex items-center justify-between px-8 py-6 bg-white shadow-sm border-b border-gray-100">
-    <a href="index.html" class="text-brand-orange font-bold text-sm hover:underline flex items-center gap-2">&larr; Back to Home</a>
-    <span class="font-bold text-2xl tracking-tight text-brand-dark">Contact Us</span>
-    <div class="w-20"></div>
+  <header class="flex items-center justify-between px-6 py-6 bg-white shadow-sm border-b">
+    <a href="index.html" class="text-brand-orange font-bold text-sm hover:underline">&larr; Home</a>
+    <span class="font-bold text-xl md:text-2xl">Contact Us</span>
+    <div class="w-10"></div>
   </header>
 
-  <main class="flex-1 flex flex-col md:flex-row max-w-5xl mx-auto w-full bg-white rounded-xl shadow-md mt-12 mb-16 overflow-hidden border border-gray-100">
-    
-    <section class="w-full md:w-1/2 p-10">
-      <h2 class="text-3xl font-bold mb-8 text-brand-orange">Write to Us</h2>
+  <main class="flex-grow max-w-5xl mx-auto w-full px-4 py-8 md:py-12">
+    <div class="flex flex-col md:flex-row bg-white rounded-xl shadow-md overflow-hidden border border-gray-100">
       
-      <form id="contactForm" class="space-y-5">
-        <div class="flex space-x-4">
-          <input type="text" name="firstName" placeholder="First Name" required class="w-1/2 px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
-          <input type="text" name="lastName" placeholder="Last Name" required class="w-1/2 px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
-        </div>
-        
-        <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
-        
-        <input type="tel" name="contactNumber" placeholder="Contact Number" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
-        
-        <input type="text" name="companyName" placeholder="Company Name" class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
-        
-        <textarea name="message" placeholder="Your Message" required rows="5" class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange resize-none"></textarea>
-        
-        <button type="submit" class="w-full py-3.5 bg-brand-orange text-white font-bold rounded-md hover:bg-[#de6b11] transition-colors shadow-sm text-lg">Send Message</button>
-      </form>
-      
-      <div id="formResponse" class="mt-4 font-bold text-sm"></div>
-    </section>
+      <section class="w-full md:w-1/2 p-6 md:p-10 border-b md:border-b-0 md:border-r border-gray-100">
+        <h2 class="text-2xl font-bold mb-6 text-brand-orange">Write to Us</h2>
+        <form id="contactForm" class="space-y-4">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <input type="text" name="firstName" placeholder="First Name" required class="flex-1 px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
+            <input type="text" name="lastName" placeholder="Last Name" required class="flex-1 px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
+          </div>
+          <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
+          <input type="tel" name="contactNumber" placeholder="Contact Number" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
+          <input type="text" name="companyName" placeholder="Company Name" class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange">
+          <textarea name="message" placeholder="Your Message" required rows="4" class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange resize-none"></textarea>
+          <button type="submit" class="w-full py-3.5 bg-brand-orange text-white font-bold rounded-md hover:bg-[#de6b11] transition-colors shadow-sm">Send Message</button>
+        </form>
+        <div id="formResponse" class="mt-4 font-bold text-sm"></div>
+      </section>
 
-    <section class="w-full md:w-1/2 bg-[#f8f9fa] p-10 flex flex-col justify-center border-l border-gray-100">
-      <h3 class="text-2xl font-bold mb-8 text-brand-dark">Contact Details</h3>
-      <div class="space-y-8 text-gray-600">
-        <div><h4 class="font-bold text-brand-orange text-lg">Career Inquiries</h4><p>careers@adfactorspr.com</p></div>
-        <div><h4 class="font-bold text-brand-orange text-lg">Business Inquiries</h4><p>business@adfactorspr.com</p></div>
-        <div><h4 class="font-bold text-brand-orange text-lg">General Inquiries</h4><p>info@adfactorspr.com</p></div>
-      </div>
-    </section>
+      <section class="w-full md:w-1/2 bg-[#f8f9fa] p-8 md:p-10 flex flex-col justify-center">
+        <h3 class="text-xl font-bold mb-8">Direct Contact</h3>
+        <div class="space-y-6">
+          <div><h4 class="font-bold text-brand-orange">Career</h4><p class="text-gray-600">careers@adfactorspr.com</p></div>
+          <div><h4 class="font-bold text-brand-orange">Business</h4><p class="text-gray-600">business@adfactorspr.com</p></div>
+          <div><h4 class="font-bold text-brand-orange">General</h4><p class="text-gray-600">info@adfactorspr.com</p></div>
+        </div>
+      </section>
+    </div>
   </main>
 
-  <footer class="text-center text-sm text-gray-500 py-6 mt-auto">© 2026 Adfactors PR. All rights reserved.</footer>
+  <footer class="text-center text-sm text-gray-400 py-6">© 2026 S Agency. All rights reserved.</footer>
 
   <script>
-    document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    document.getElementById('contactForm').onsubmit = async (e) => {
       e.preventDefault();
-      const responseDiv = document.getElementById('formResponse');
-      
-      // DIAGNOSTIC: Grabbing values directly by Name
+      const f = e.target;
+      const resDiv = document.getElementById('formResponse');
       const data = {
-        firstName: document.getElementsByName('firstName')[0].value,
-        lastName: document.getElementsByName('lastName')[0].value,
-        email: document.getElementsByName('email')[0].value,
-        contactNumber: document.getElementsByName('contactNumber')[0].value,
-        companyName: document.getElementsByName('companyName')[0].value,
-        message: document.getElementsByName('message')[0].value
+        firstName: f.firstName.value, lastName: f.lastName.value,
+        email: f.email.value, contactNumber: f.contactNumber.value,
+        companyName: f.companyName.value, message: f.message.value
       };
-
-      console.log('Data being sent:', data);
-      responseDiv.textContent = 'Sending...';
-      responseDiv.className = 'mt-4 font-bold text-sm text-gray-500';
-
+      resDiv.textContent = 'Sending...';
       try {
-        const res = await fetch('/api/contact', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(data)
-        });
-        const result = await res.json();
-        if (res.ok && result.success) {
-          responseDiv.textContent = 'Success';
-          responseDiv.className = 'mt-4 font-bold text-green-600';
-          document.getElementById('contactForm').reset();
+        const r = await fetch('/api/contact', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(data) });
+        const res = await r.json();
+        if (res.success) { 
+          resDiv.textContent = 'Message Saved Successfully!'; 
+          resDiv.className = 'mt-4 font-bold text-green-600';
+          f.reset(); 
         } else {
-          responseDiv.textContent = '';
+          resDiv.textContent = 'Error: ' + res.error;
+          resDiv.className = 'mt-4 font-bold text-red-600';
         }
-      } catch (err) {
-        responseDiv.textContent = '';
+      } catch { 
+        resDiv.textContent = 'Network error. Is server.js running?'; 
+        resDiv.className = 'mt-4 font-bold text-red-600';
       }
-    });
+    };
   </script>
 </body>
 </html>
