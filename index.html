@@ -28,7 +28,6 @@
       background-size: cover;
       background-position: center;
     }
-    /* Smooth fade transition for the carousel */
     .fade-transition {
       transition: opacity 0.5s ease-in-out;
     }
@@ -93,7 +92,7 @@
           </div>
       </div>
 
-      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg">
+      <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg z-50">
           <div class="px-4 pt-2 pb-6 space-y-1">
               <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-orange hover:bg-orange-50">About Us</a>
               <a href="#" class="block px-3 py-3 rounded-md text-base font-medium text-gray-700 hover:text-brand-orange hover:bg-orange-50">Our Expertise</a>
@@ -104,42 +103,42 @@
       </div>
   </header>
 
-  <section class="bg-gradient-to-r from-brand-orange to-[#de6b11] text-white py-20 px-8 flex items-center justify-center overflow-hidden min-h-[350px]">
+  <section class="bg-gradient-to-r from-brand-orange to-[#de6b11] text-white py-12 md:py-20 px-6 flex items-center justify-center overflow-hidden min-h-[350px]">
     <div id="carousel-container" class="w-full max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between fade-transition opacity-100">
       <div class="md:w-3/4 pr-0 md:pr-12 text-center md:text-left">
-        <h1 id="carousel-quote" class="text-3xl md:text-5xl font-bold mb-6 leading-tight">“Reputation management is not just what we do, it’s who we are.”</h1>
-        <p id="carousel-subtext" class="text-lg md:text-xl font-medium">We help brands build, protect, and amplify their reputation in a complex world.</p>
+        <h1 id="carousel-quote" class="text-2xl md:text-5xl font-bold mb-6 leading-tight">“Reputation management is not just what we do, it’s who we are.”</h1>
+        <p id="carousel-subtext" class="text-base md:text-xl font-medium">We help brands build, protect, and amplify their reputation in a complex world.</p>
       </div>
-      <img id="carousel-image" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256" alt="Testimonial Image" class="w-40 h-40 md:w-48 md:h-48 rounded-full shadow-2xl mt-10 md:mt-0 border-4 border-white object-cover flex-shrink-0">
+      <img id="carousel-image" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=facearea&w=256&h=256" alt="Testimonial Image" class="w-32 h-32 md:w-48 md:h-48 rounded-full shadow-2xl mt-8 md:mt-0 border-4 border-white object-cover flex-shrink-0">
     </div>
   </section>
 
-  <section class="py-16 bg-white text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-2">We understand <span class="text-brand-orange">business in India.</span></h2>
+  <section class="py-12 md:py-16 bg-white text-center px-4">
+    <h2 class="text-2xl md:text-4xl font-bold mb-2">We understand <span class="text-brand-orange">business in India.</span></h2>
   </section>
 
-  <section class="parallax relative h-[450px] flex items-center">
-    <div class="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 bg-white bg-opacity-95 shadow-xl rounded-2xl p-10 w-full max-w-md">
+  <section class="parallax relative h-[500px] md:h-[450px] flex items-center justify-center md:justify-start px-4">
+    <div class="md:absolute md:right-8 lg:right-16 bg-white bg-opacity-95 shadow-xl rounded-2xl p-8 md:p-10 w-full max-w-md">
       <h3 class="text-2xl font-bold mb-4">Our Story</h3>
-      <p class="mb-6 text-brand-dark leading-relaxed">Founded in 1997, Adfactors PR has grown to become India’s largest PR consultancy, serving over 300 retained clients across 40 sectors. Our journey is built on trust, expertise, and a relentless pursuit of excellence.</p>
+      <p class="mb-6 text-brand-dark leading-relaxed text-sm md:text-base">Founded in 1997, Adfactors PR has grown to become India’s largest PR consultancy, serving over 300 retained clients across 40 sectors. Our journey is built on trust, expertise, and a relentless pursuit of excellence.</p>
       <a href="#" class="text-brand-orange font-bold text-sm hover:underline uppercase tracking-wide">Read more</a>
     </div>
   </section>
 
-  <section class="py-20 px-8 bg-[#f8f9fa]">
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
-      <div class="bg-white rounded-2xl shadow-md p-10 border-b-4 border-brand-orange hover:shadow-lg transition-shadow">
+  <section class="py-16 md:py-20 px-6 bg-[#f8f9fa]">
+    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10">
+      <div class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-b-4 border-brand-orange hover:shadow-lg transition-shadow">
         <h4 class="text-2xl font-bold mb-6">Our Expertise</h4>
-        <ul class="space-y-3 text-brand-dark">
+        <ul class="space-y-3 text-brand-dark text-sm md:text-base">
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Corporate Reputation</li>
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Crisis Management</li>
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Media Relations</li>
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Digital PR</li>
         </ul>
       </div>
-      <div class="bg-white rounded-2xl shadow-md p-10 border-b-4 border-brand-orange hover:shadow-lg transition-shadow">
+      <div class="bg-white rounded-2xl shadow-md p-8 md:p-10 border-b-4 border-brand-orange hover:shadow-lg transition-shadow">
         <h4 class="text-2xl font-bold mb-6">Sector</h4>
-        <ul class="space-y-3 text-brand-dark">
+        <ul class="space-y-3 text-brand-dark text-sm md:text-base">
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Finance & Banking</li>
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Healthcare</li>
           <li class="flex items-center"><span class="text-brand-orange mr-2">▪</span> Technology</li>
@@ -149,27 +148,27 @@
     </div>
   </section>
 
-  <section class="py-20 px-8 bg-white">
+  <section class="py-16 md:py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
-      <div class="grid md:grid-cols-2 gap-16 mb-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 mb-16">
         <div>
           <h5 class="text-xs font-bold uppercase tracking-widest mb-4 text-brand-orange">Explore Latest</h5>
-          <h2 class="text-3xl font-bold mb-8 text-brand-dark">Insights</h2>
+          <h2 class="text-2xl md:text-3xl font-bold mb-8 text-brand-dark">Insights</h2>
           <div class="space-y-6">
-            <div class="bg-[#f8f9fa] rounded-2xl p-8 shadow-sm border border-gray-100 border-l-4 border-l-brand-orange hover:-translate-y-1 transition-transform">
+            <div class="bg-[#f8f9fa] rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 border-l-4 border-l-brand-orange hover:-translate-y-1 transition-transform">
               <h6 class="font-bold text-lg mb-2">The Future of PR in India</h6>
-              <p class="text-gray-600">How digital transformation is reshaping the communications landscape.</p>
+              <p class="text-gray-600 text-sm md:text-base">How digital transformation is reshaping the communications landscape.</p>
             </div>
-            <div class="bg-[#f8f9fa] rounded-2xl p-8 shadow-sm border border-gray-100 border-l-4 border-l-brand-orange hover:-translate-y-1 transition-transform">
+            <div class="bg-[#f8f9fa] rounded-2xl p-6 md:p-8 shadow-sm border border-gray-100 border-l-4 border-l-brand-orange hover:-translate-y-1 transition-transform">
               <h6 class="font-bold text-lg mb-2">Crisis Response Playbook</h6>
-              <p class="text-gray-600">Best practices for managing reputation in turbulent times.</p>
+              <p class="text-gray-600 text-sm md:text-base">Best practices for managing reputation in turbulent times.</p>
             </div>
           </div>
         </div>
         <div>
           <h5 class="text-xs font-bold uppercase tracking-widest mb-4 text-brand-orange">Get Latest</h5>
-          <h2 class="text-3xl font-bold mb-8 text-brand-dark">News</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <h2 class="text-2xl md:text-3xl font-bold mb-8 text-brand-dark">News</h2>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div class="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm border border-gray-100 hover:-translate-y-1 transition-transform">
               <h6 class="font-bold mb-2">Adfactors wins SABRE Award</h6>
               <p class="text-sm text-gray-600">Recognized for excellence in corporate reputation management.</p>
@@ -178,7 +177,7 @@
               <h6 class="font-bold mb-2">New Delhi Office Opens</h6>
               <p class="text-sm text-gray-600">Expanding our presence in North India.</p>
             </div>
-            <div class="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm border border-gray-100 md:col-span-2 hover:-translate-y-1 transition-transform">
+            <div class="bg-[#f8f9fa] rounded-2xl p-6 shadow-sm border border-gray-100 sm:col-span-2 hover:-translate-y-1 transition-transform">
               <h6 class="font-bold mb-2">PRWeek Asia 2025 Finalist</h6>
               <p class="text-sm text-gray-600">Shortlisted for Agency of the Year.</p>
             </div>
@@ -186,30 +185,30 @@
         </div>
       </div>
       
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=80&q=80" alt="Award 1" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">Best PR Agency 2025</span>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mt-12">
+        <div class="bg-brand-dark rounded-2xl p-4 md:p-6 flex flex-col items-center text-center text-white shadow-lg">
+          <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=80&q=80" alt="Award 1" class="w-10 h-10 md:w-12 md:h-12 mb-4 rounded-full object-cover">
+          <span class="font-bold text-xs md:text-sm">Best PR Agency 2025</span>
         </div>
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=80&q=80" alt="Award 2" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">SABRE Gold Winner</span>
+        <div class="bg-brand-dark rounded-2xl p-4 md:p-6 flex flex-col items-center text-center text-white shadow-lg">
+          <img src="https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=80&q=80" alt="Award 2" class="w-10 h-10 md:w-12 md:h-12 mb-4 rounded-full object-cover">
+          <span class="font-bold text-xs md:text-sm">SABRE Gold Winner</span>
         </div>
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=80&q=80" alt="Award 3" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">PRWeek Asia Finalist</span>
+        <div class="bg-brand-dark rounded-2xl p-4 md:p-6 flex flex-col items-center text-center text-white shadow-lg">
+          <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?auto=format&fit=crop&w=80&q=80" alt="Award 3" class="w-10 h-10 md:w-12 md:h-12 mb-4 rounded-full object-cover">
+          <span class="font-bold text-xs md:text-sm">PRWeek Asia Finalist</span>
         </div>
-        <div class="bg-brand-dark rounded-2xl p-6 flex flex-col items-center text-center text-white shadow-lg">
-          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=80&q=80" alt="Award 4" class="w-12 h-12 mb-4 rounded-full object-cover">
-          <span class="font-bold text-sm">India PR Awards</span>
+        <div class="bg-brand-dark rounded-2xl p-4 md:p-6 flex flex-col items-center text-center text-white shadow-lg">
+          <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=80&q=80" alt="Award 4" class="w-10 h-10 md:w-12 md:h-12 mb-4 rounded-full object-cover">
+          <span class="font-bold text-xs md:text-sm">India PR Awards</span>
         </div>
       </div>
     </div>
   </section>
 
-  <footer class="bg-brand-dark text-white py-20 px-8">
-    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-12">
-      <div>
+  <footer class="bg-brand-dark text-white py-16 md:py-20 px-8">
+    <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-5 gap-10 md:gap-12">
+      <div class="col-span-1">
         <h6 class="font-bold mb-6 text-brand-orange">Company</h6>
         <ul class="space-y-3 text-sm text-gray-300">
           <li><a href="#" class="hover:text-white transition-colors">About Us</a></li>
@@ -217,7 +216,7 @@
           <li><a href="#" class="hover:text-white transition-colors">History</a></li>
         </ul>
       </div>
-      <div>
+      <div class="col-span-1">
         <h6 class="font-bold mb-6 text-brand-orange">Work</h6>
         <ul class="space-y-3 text-sm text-gray-300">
           <li><a href="#" class="hover:text-white transition-colors">Case Studies</a></li>
@@ -225,21 +224,21 @@
           <li><a href="#" class="hover:text-white transition-colors">Awards</a></li>
         </ul>
       </div>
-      <div>
+      <div class="col-span-1">
         <h6 class="font-bold mb-6 text-brand-orange">Opportunities</h6>
         <ul class="space-y-3 text-sm text-gray-300">
           <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
           <li><a href="#" class="hover:text-white transition-colors">Internships</a></li>
         </ul>
       </div>
-      <div>
+      <div class="col-span-1">
         <h6 class="font-bold mb-6 text-brand-orange">Support</h6>
         <ul class="space-y-3 text-sm text-gray-300">
           <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
           <li><a href="#" class="hover:text-white transition-colors">FAQs</a></li>
         </ul>
       </div>
-      <div>
+      <div class="col-span-2 md:col-span-1">
         <h6 class="font-bold mb-6 text-brand-orange">Connect</h6>
         <div class="flex space-x-4">
           <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white transition-colors"><svg fill="currentColor" viewBox="0 0 24 24" class="w-6 h-6"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.97 0-1.75-.79-1.75-1.76s.78-1.76 1.75-1.76 1.75.79 1.75 1.76-.78 1.76-1.75 1.76zm15.5 11.27h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z"/></svg></a>
@@ -247,7 +246,7 @@
         </div>
       </div>
     </div>
-    <div class="border-t border-gray-700 mt-16 pt-8 text-center text-sm text-gray-500">
+    <div class="border-t border-gray-700 mt-12 md:mt-16 pt-8 text-center text-xs md:text-sm text-gray-500">
       © 2026 Adfactors PR. All rights reserved.
     </div>
   </footer>
@@ -286,21 +285,16 @@
     const subtextEl = document.getElementById('carousel-subtext');
     const imageEl = document.getElementById('carousel-image');
 
-    // Run carousel every 5 seconds (5000 milliseconds)
     setInterval(() => {
-      // Step A: Fade Out
       containerEl.classList.remove('opacity-100');
       containerEl.classList.add('opacity-0');
 
-      // Wait 500ms for the fade-out to finish, then swap content and fade back in
       setTimeout(() => {
         currentIndex = (currentIndex + 1) % testimonials.length;
-        
         quoteEl.innerText = testimonials[currentIndex].quote;
         subtextEl.innerText = testimonials[currentIndex].subtext;
         imageEl.src = testimonials[currentIndex].image;
 
-        // Step B: Fade In
         containerEl.classList.remove('opacity-0');
         containerEl.classList.add('opacity-100');
       }, 500); 
