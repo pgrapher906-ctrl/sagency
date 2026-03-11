@@ -36,11 +36,10 @@
       <h2 class="text-2xl md:text-3xl font-bold mb-8 text-brand-orange">Write to Us</h2>
       
       <form id="contactForm" class="space-y-5">
-        <div class="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-4">
-          <input type="text" name="firstName" placeholder="First Name" required class="flex-1 px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange text-sm md:text-base">
-          <input type="text" name="lastName" placeholder="Last Name" required class="flex-1 px-4 py-3 border border-gray-100 rounded-md outline-none focus:ring-1 focus:ring-brand-orange text-sm md:text-base">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-4 w-full">
+          <input type="text" name="firstName" placeholder="First Name" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange text-sm md:text-base">
+          <input type="text" name="lastName" placeholder="Last Name" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange text-sm md:text-base">
         </div>
-        
         <input type="email" name="email" placeholder="Email" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange text-sm md:text-base">
         
         <input type="tel" name="contactNumber" placeholder="Contact Number" required class="w-full px-4 py-3 border border-gray-200 rounded-md outline-none focus:ring-1 focus:ring-brand-orange text-sm md:text-base">
@@ -96,10 +95,12 @@
           responseDiv.className = 'mt-4 font-bold text-green-600';
           document.getElementById('contactForm').reset();
         } else {
-          responseDiv.textContent = '';
+          responseDiv.textContent = 'An error occurred. Please try again.';
+          responseDiv.className = 'mt-4 font-bold text-red-600';
         }
       } catch (err) {
-        responseDiv.textContent = '';
+        responseDiv.textContent = 'Failed to send message. Check your connection.';
+        responseDiv.className = 'mt-4 font-bold text-red-600';
       }
     });
   </script>
